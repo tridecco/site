@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("../components/head.ejs") %>
+  <title>Instructions | Tridecco</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+  <!-- Header Section -->
+  <%- include("../components/header.ejs") %>
+
+  <!-- Instructions Section -->
+  <section class="container mx-auto px-4 py-8" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-left mb-6 transition duration-300 hover:text-gray-700">How to Play Tridecco</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <img src="/img/instructions/1.avif" alt="Step 1" class="w-full transition duration-300 hover:scale-105" data-aos="zoom-in">
+      <img src="/img/instructions/2.avif" alt="Step 2" class="w-full transition duration-300 hover:scale-105" data-aos="zoom-in" data-aos-delay="100">
+      <img src="/img/instructions/3.avif" alt="Step 3" class="w-full transition duration-300 hover:scale-105" data-aos="zoom-in" data-aos-delay="200">
+      <img src="/img/instructions/4.avif" alt="Step 4" class="w-full transition duration-300 hover:scale-105" data-aos="zoom-in" data-aos-delay="300">
+      <img src="/img/instructions/5.avif" alt="Step 5" class="w-full transition duration-300 hover:scale-105" data-aos="zoom-in" data-aos-delay="400">
+      <img src="/img/instructions/6.avif" alt="Step 6" class="w-full transition duration-300 hover:scale-105" data-aos="zoom-in" data-aos-delay="500">
+      <img src="/img/instructions/7.avif" alt="Step 7" class="w-full transition duration-300 hover:scale-105" data-aos="zoom-in" data-aos-delay="600">
+      <img src="/img/instructions/8.avif" alt="Step 8" class="w-full transition duration-300 hover:scale-105" data-aos="zoom-in" data-aos-delay="700">
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="container mx-auto px-4 py-8" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-left mb-6 transition duration-300 hover:text-gray-700">Download Instructions</h2>
+    <a onclick="window.open('/pdf/instructions.pdf')" class="bg-blue-500 text-white py-3 px-6 rounded-full text-lg font-semibold transition duration-300 hover:bg-blue-700 transform hover:scale-105" data-aos="zoom-in">Download PDF</a>
+  </section>
+
+  <!-- Footer Section -->
+  <%- include("../components/footer.ejs") %>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
