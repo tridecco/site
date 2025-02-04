@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("../components/head.ejs") %>
+  <title>About | Tridecco</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+  <!-- Header Section -->
+  <%- include("../components/header.ejs") %>
+
+  <!-- About the Game Designers Section -->
+  <section class="container mx-auto px-4 py-8" style="flex-grow: 1;" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-left mb-6 transition duration-300 hover:text-gray-700">About the Game Designer</h2>
+    <p class="text-lg text-left mb-4 transition duration-300 hover:text-gray-700">Fueled by a lifelong fascination with alternative energy, Ted Yu spent years researching and developing new battery and fuel cell technologies. His doctoral thesis in materials science focused on modeling these very materials. But beneath the scientific mind resided a playful spirit – a legacy of his high school Dungeons & Dragons days.</p>
+    <p class="text-lg text-left mb-4 transition duration-300 hover:text-gray-700">In 2023, the discovery of the new 13-sided Penrose tile, a shape that could endlessly tessellate a surface, sparked an unexpected turn. An idea took root, and Ted found himself drawn to creating a game centered around this intriguing discovery.</p>
+    <p class="text-lg text-left mb-4 transition duration-300 hover:text-gray-700">Today, Ted balances his passions. He inspires young minds as a high school computer science teacher, while also pursuing cutting-edge research at Caltech. A California resident, he enjoys life with his wife and their three children, where family board game nights are a favorite tradition.</p>
+  </section>
+
+  <!-- Footer Section -->
+  <%- include("../components/footer.ejs") %>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
